@@ -2,7 +2,7 @@
 ## practical-javascript
 
 
-Version -1 <a href="https://yavuzugurtas.github.io/practical-javascript/tree/version-1">Live link</a>
+Version -1 <a href="https://yavuzugurtas.github.io/practical-javascript/">Live link</a>
 
 
 
