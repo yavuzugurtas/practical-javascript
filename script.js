@@ -98,9 +98,107 @@ addTodo('some stuff');
      todos.splice(position,1);
      displayTodos();
      }
-     
+
  deleteTodo(0)
  deleteTodo(2)
+
+
+ // Version -3
+
+
+  //  It should store the todos array on an object 
+
+ var todoList = {
+    todos: ['item 1', 'item 2', 'item 3']
+  };
+
+  //  It should have a displayTodos method 
+
+
+var todoList = {
+    todos: ['item 1', 'item 2', 'item 3'],
+    displayTodos: function () {
+       console.log('MyTodos', this.todos);
+      }
+  };
+  
+todoList.displayTodos();
+
+//  It should have an addTodo method 
+
+
+var todoList = {
+    todos: ['item 1', 'item 2', 'item 3'],
+    displayTodos: function () {
+       console.log('MyTodos', this.todos);
+      },
+
+      addTodo: function(todo) {
+          this.todos.push(todo);
+          this.displayTodos();
+
+      }
+  };
+
+todoList.addTodo('plunker');
+
+// It should have a changeTodo method 
+
+var todoList = {
+    todos: ['item 1', 'item 2', 'item 3'],
+    displayTodos: function () {
+       console.log('MyTodos', this.todos);
+      },
+
+      addTodo: function(todo) {
+          this.todos.push(todo);
+          this.displayTodos();
+
+      },
+
+      changeTodo: function(position, newValue) {
+         this.todos[position] = newValue;
+         this.displayTodos();
+
+      }
+
+  };
+
+  todoList.changeTodo(0,'first');
+
+  // It should have a deleteTodo method 
+
+
+  var todoList = {
+    todos: ['item 1', 'item 2', 'item 3'],
+    displayTodos: function () {
+       console.log('MyTodos', this.todos);
+      },
+
+      addTodo: function(todo) {
+          this.todos.push(todo);
+          this.displayTodos();
+
+      },
+
+      changeTodo: function(position, newValue) {
+         this.todos[position] = newValue;
+         this.displayTodos();
+
+      },
+      
+      deleteTodo: function(position) {
+        this.todos.splice(position,1);
+        this.displayTodos();
+
+      }
+
+  };
+
+  todoList.deleteTodo(1);
+  
+
+
 
 
    
