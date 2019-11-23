@@ -1,4 +1,4 @@
-//  Todos
+//  Version -1  / Todos
 
 //  It should have a place to store todos 
 
@@ -31,6 +31,78 @@ todos.splice(2,1)  // we deleted the third array. 2=array , 1=amount
 console.log("I deleted the third one:", todos)
 
 
+// Version - 2
+
+/* Functions are just recipes 
+
+function makeTurkeySandwich() {
+ Get one slice of bread;
+ Add turkey;
+ Put a slice of bread on top;
+
+}
+makeTurkeySandwich()
 
 
+Customizing functions 
+
+function makeSandwichWith(filling) {
+
+     Get one slice of bread;
+     Add filling;
+}
+
+makeSandwichWith(ham)
+
+   More on customizing functions 
+
+function sayHiTo (person);
+console.log('Hi', person);
+sayHiTo('gordon');
+*/
+
+//  It should have a function to display todos 
+
+
+ var todos = ['item1', 'item2', 'item3']; 
+    
+   function displayTodos () {
+        console.log('my todos:', todos);
+   }
+    displayTodos();
+
+// It should have a function to add new todos 
+
+ function addTodo(todo){
+    todos.push(todo);
+    displayTodos();
+}
+addTodo('some stuff'); 
+
+// It should have a function to change a todo 
+
+ function changeTodo(position, newValue) {
+
+    todos[position] = newValue;
+    displayTodos();
+
+    }
+   
+    changeTodo(0,'changed')
+
+
+// It should have a function to delete a todo 
+
+
+ function deleteTodo(){
+     todos.splice(position,1);
+     displayTodos();
+     }
+     
+ deleteTodo(0)
+ deleteTodo(2)
+
+
+   
+   
 
