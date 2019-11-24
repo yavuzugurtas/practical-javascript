@@ -2,9 +2,7 @@
 ## practical-javascript
 
 
-Version -1 <a href="https://yavuzugurtas.github.io/practical-javascript/">Live link</a>
-
-
+Version -1 
 
 Javascript 3 
 Week 1
