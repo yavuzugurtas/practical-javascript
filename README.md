@@ -2,7 +2,9 @@
 ## practical-javascript
 
 
-Version - 5 <a href="https://github.com/yavuzugurtas/practical-javascript/">Live link</a>
+Now, I have finished version-5 session.  <a href="https://yavuzugurtas.github.io/practical-javascript/">Live link</a>
+
+Credits to watchandcode.com 
 
 
 
