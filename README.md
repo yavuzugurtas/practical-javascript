@@ -2,8 +2,7 @@
 ## practical-javascript
 
 
-Version - 3 <a href="https://github.com/yavuzugurtas/practical-javascript/">Live link</a>
-
+Version - 3 
 
 
 Javascript 3 
