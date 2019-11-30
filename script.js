@@ -1,3 +1,4 @@
+
 //  Version -1  / Todos
 
 //  It should have a place to store todos 
@@ -59,8 +60,8 @@ makeSandwichWith(ham)
 function sayHiTo (person);
 console.log('Hi', person);
 sayHiTo('gordon');
-*/
 
+*/
 //  It should have a function to display todos 
 
 
@@ -532,13 +533,30 @@ var todoList = {
          }
      }
           
-    };
+    }; 
 
 
 
 
-
-
+    // Version - 7 There should be a “Display todos” button and a “Toggle all” button in the app 
    
-   
+    //  Clicking “Display todos” should run todoList.displayTodos 
 
+
+    // 1-We want to get acces to the display todos button
+
+      var displayTodosbutton = document.getElementById('displayTodosButton');
+      var toggleAllButton = document.getElementById('toggleAllButton');
+
+
+    // 2-we want to run displayTodos method when some one clicks display todos button
+
+       displayTodosbutton.addEventListener('click', function() {
+       todoList.displayTodos();
+
+    });
+    
+
+       toggleAllButton.addEventListener('click',function(){
+          todoList.toggleAll();
+       });
