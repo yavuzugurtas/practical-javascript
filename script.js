@@ -560,3 +560,48 @@ var todoList = {
        toggleAllButton.addEventListener('click',function(){
           todoList.toggleAll();
        });
+
+       // Version-8 There should be a button for adding todos
+
+       var handlers = {
+
+         displayTodos: function() {
+            todoList.displayTodos();
+
+         },
+
+         toggleAll: function() {
+             todoList.toggleAll();
+         },
+
+         addTodo: function() {
+            var addTodoTextInput = document.getElementById('addTodoTextInput'); 
+            todoList.addTodo(addTodoTextInput.value); 
+            addTodoTextInput.value = '';
+         },
+          //    There should be a button for changing todos 
+
+         changeTodo: function(){
+            var changeTodoPositionInput = document.getElementById('changeTodoPositionInput')
+            var changeTodoTextInput = document.getElementById('changeTodoTextInput');
+            todoList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value)
+            changeTodoPositionInput.value = '';
+            changeTodoTextInput.value = '';
+         },
+         //  There should be a button for deleting todos 
+
+
+         deleteTodo: function() {
+            var deleteTodoPositionInput = document.getElementById('deleteTodoPositionInput')
+            todoList.deleteTodo(deleteTodoPositionInput.valueAsNumber);
+            deleteTodoPositionInput.value = '';
+            
+         },
+         // There should be a button for toggling a todo 
+         toggleCompleted: function() {
+            var toggleCopletedPositionInput = document.getElementById('toggleCompletedPositionInput')
+            todoList.toggleCompleted(toggleCompletedPositionInput.valueAsNumber);
+            toggleCompletedPositionInput.value = ''; }
+
+       }
+      
